@@ -1,46 +1,59 @@
 .form__container
     form(action="" class="form__wrapper" id="main__form")
+        h4(class="form__placeholder") Цена за сутки, Р
         label(for="" class="label__wrapper")
-            span(class="form__placeholder") Цена за сутки, Р
-            input(type="text" name="min")
-            input(type="text" name="max")
-        label(for="confirm" class="label__wrapper")
-           span(class="form__placeholder") Площадь
-           span(class="customCheckbox") 0,63 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") 0,90 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") 1,13 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") 1,56 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") 2,56 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") 2,56 м2
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-        label(for="confirm" class="label__wrapper")
-           span(class="form__placeholder") Оснащение номера
-           span(class="customCheckbox") Пустой номер
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") Лежак
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") Когтеточка
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") Игровой комплекс
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
-           span(class="customCheckbox") Домик
-               input(type="checkbox" id="confirm")
-               span(class="customCheckbox__item")
+            .input-wrapper
+                input(type="text" name="min")
+                input(type="text" name="max")
+        .form-groups-container
+            .form-groups
+                h4(class="form__placeholder") Площадь
+                label(for="fcheck_1" class="label__wrapper")
+                   .customCheckbox 0,63 м2
+                       input(type="checkbox" id="fcheck_1")
+                       span(class="customCheckbox__item")
+                label(for="fcheck_2" class="label__wrapper")
+                   .customCheckbox 0,90 м2
+                       input(type="checkbox" id="fcheck_2")
+                       span(class="customCheckbox__item")
+                label(for="fcheck_3" class="label__wrapper")
+                   .customCheckbox 1,13 м2
+                       input(type="checkbox" id="fcheck_3")
+                       span(class="customCheckbox__item")
+                label(for="fcheck_4" class="label__wrapper")
+                   .customCheckbox 1,56 м2
+                       input(type="checkbox" id="fcheck_4")
+                       span(class="customCheckbox__item")
+                label(for="fcheck_5" class="label__wrapper")
+                   .customCheckbox 2,56 м2
+                       input(type="checkbox" id="fcheck_5")
+                       span(class="customCheckbox__item")
+                label(for="fcheck_6" class="label__wrapper")
+                   .customCheckbox 2,56 м2
+                       input(type="checkbox" id="fcheck_6")
+                       span(class="customCheckbox__item")
+            .form-groups
+                h4(class="form__placeholder") Оснащение номера
+                label(for="empty_room" class="label__wrapper")
+                   .customCheckbox Пустой номер
+                       input(type="checkbox" id="empty_room")
+                       span(class="customCheckbox__item")
+                label(for="lejak" class="label__wrapper")
+                   .customCheckbox Лежак
+                       input(type="checkbox" id="lejak")
+                       span(class="customCheckbox__item")
+                label(for="nails" class="label__wrapper")
+                   .customCheckbox Когтеточка
+                       input(type="checkbox" id="nails")
+                       span(class="customCheckbox__item")
+                label(for="game_complex" class="label__wrapper")
+                   .customCheckbox Игровой комплекс
+                       input(type="checkbox" id='game_complex')
+                       span(class="customCheckbox__item")
+                label(for="house" class="label__wrapper")
+                   .customCheckbox Домик
+                       input(type="checkbox" id="house")
+                       span(class="customCheckbox__item")
         .button__wrapper
             button(class="btn") Применить
             a(class="btn") Сбросить фильтр

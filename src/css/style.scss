@@ -58,6 +58,10 @@ section{
   margin: 0 auto;
 }
 
+.main-content{
+  margin-top: 110px;
+}
+
 .label__alert{
   position: absolute;
   top: -6px;
@@ -77,12 +81,13 @@ section{
 
 .button__wrapper{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left-menu{
-  max-width: 25%;
+  max-width: 30%;
 }
 
 .content{
@@ -91,19 +96,22 @@ section{
 }
 
 .btn{
-  color: $white-color;
-  font-size: 16px;
-  font-weight: 600;
+  color: $main-font-color;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 24px;
-  padding: 12px 30px;
-  background: $orange;
-  margin: 8px 0;
+  padding: 6px 0;
+  background: transparent;
+  margin: 5px 0;
   position: relative;
-  border:none;
-  display: inline-block;
-  transition: all 0.2s ease-in;
+  border: 3px solid $yellow;
+  display: block;
+  width: calc(100% - 6px);
+  text-align: center;
+  border-radius: 30px;
   &:hover{
     text-decoration: none;
+    background: $yellow;
     transition: all 0.2s ease-out;
   }
 }

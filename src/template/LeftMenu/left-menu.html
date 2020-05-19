@@ -1,23 +1,76 @@
 
 <div class="form__container">
 	<form class="form__wrapper" action="" id="main__form">
-		<label class="label__wrapper" for=""><span class="form__placeholder">Цена за сутки, Р</span>
-			<input type="text" name="min"/>
-			<input type="text" name="max"/>
+		<h4 class="form__placeholder">Цена за сутки, Р</h4>
+		<label class="label__wrapper" for="">
+			<div class="input-wrapper">
+				<input type="text" name="min"/>
+				<input type="text" name="max"/>
+			</div>
 		</label>
-		<label class="label__wrapper" for="confirm"><span class="form__placeholder">Площадь</span><span class="customCheckbox">0,63 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">0,90 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">1,13 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">1,56 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">2,56 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">2,56 м2
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span></label>
-		<label class="label__wrapper" for="confirm"><span class="form__placeholder">Оснащение номера</span><span class="customCheckbox">Пустой номер
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">Лежак
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">Когтеточка
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">Игровой комплекс
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span><span class="customCheckbox">Домик
-				<input type="checkbox" id="confirm"/><span class="customCheckbox__item"></span></span></label>
+		<div class="form-groups-container">
+			<div class="form-groups">
+				<h4 class="form__placeholder">Площадь</h4>
+				<label class="label__wrapper" for="fcheck_1">
+					<div class="customCheckbox">0,63 м2
+						<input type="checkbox" id="fcheck_1"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="fcheck_2">
+					<div class="customCheckbox">0,90 м2
+						<input type="checkbox" id="fcheck_2"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="fcheck_3">
+					<div class="customCheckbox">1,13 м2
+						<input type="checkbox" id="fcheck_3"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="fcheck_4">
+					<div class="customCheckbox">1,56 м2
+						<input type="checkbox" id="fcheck_4"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="fcheck_5">
+					<div class="customCheckbox">2,56 м2
+						<input type="checkbox" id="fcheck_5"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="fcheck_6">
+					<div class="customCheckbox">2,56 м2
+						<input type="checkbox" id="fcheck_6"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+			</div>
+			<div class="form-groups">
+				<h4 class="form__placeholder">Оснащение номера</h4>
+				<label class="label__wrapper" for="empty_room">
+					<div class="customCheckbox">Пустой номер
+						<input type="checkbox" id="empty_room"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="lejak">
+					<div class="customCheckbox">Лежак
+						<input type="checkbox" id="lejak"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="nails">
+					<div class="customCheckbox">Когтеточка
+						<input type="checkbox" id="nails"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="game_complex">
+					<div class="customCheckbox">Игровой комплекс
+						<input type="checkbox" id="game_complex"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+				<label class="label__wrapper" for="house">
+					<div class="customCheckbox">Домик
+						<input type="checkbox" id="house"/><span class="customCheckbox__item"></span>
+					</div>
+				</label>
+			</div>
+		</div>
 		<div class="button__wrapper">
 			<button class="btn">Применить</button><a class="btn">Сбросить фильтр</a>
 		</div>

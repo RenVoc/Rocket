@@ -1,0 +1,68 @@
+@import "../../css/partials/helpers.scss";
+
+.input-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  >input{
+    width: 100px;
+    margin:5px 5px 5px 0;
+  }
+}
+
+.form__placeholder{
+  transition: all .2s ease-in;
+  margin:18px 0 10px;
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.customCheckbox__item {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border:1px solid $border-color;
+}
+
+input:checked ~ .customCheckbox__item {
+  background: url('../../images/checked.png') no-repeat 50%;
+}
+
+.customCheckbox__item:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheckbox{
+  margin: 10px 0;
+  padding-left: 30px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+@media all and (max-width: 1000px) {
+  .menu__item {
+    margin: 0;
+    font-size: 12px;
+    width: 40%;
+  }
+}

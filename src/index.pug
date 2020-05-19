@@ -5,13 +5,13 @@ html(lang="ru")
         include template/links.pug
     body
         .root-wrapper
-            header.header
+            header.header#main-header
                 .center-wrap
                     include template/Header/header.pug
-            section.center-wrap
+            section.center-wrap.main-content
+                h1 Наши номера
                 .flex__container.flex__container_row
                     aside.left-menu
-                        h1 Наши номера
                         include template/LeftMenu/left-menu.pug
                     article.content
                         include template/Content/Cards.pug

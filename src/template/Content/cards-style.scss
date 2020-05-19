@@ -9,13 +9,50 @@
 }
 
 .cards__item{
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 15px);
   border: 1px solid $border-color;
   border-radius: 4px;
-  margin: 5px;
+  margin: 10px 0;
   box-shadow: $box-shadow;
+}
+
+.cards__image{
+  img{
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+  }
 }
 
 .cards__description{
   padding: 10px;
+}
+
+.btn.btn_card{
+  background: $orange;
+  border-color: $orange;
+  color: #fff;
+  padding-right: 35px;
+  width: calc(100% - 41px);
+  position: relative;
+  &:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -3px;
+    background: url('../../images/paw.png') no-repeat;
+    width: 42px;
+    height: 42px;
+  }
+  &:hover{
+    background: $error-color;
+    border-color: $error-color;
+  }
+}
+
+
+
+@media all and (max-width: 1000px) {
+  .cards__item{
+    width: 100%;
+  }
 }

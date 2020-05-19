@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     include = require('gulp-include'),
     autoprefixer = require('gulp-autoprefixer');
 
+
 var path = {
     build: {
         html: 'build/',
@@ -27,6 +28,7 @@ var path = {
         html: 'src/*.html',
         js: 'src/js/common.js',
         style: 'src/css/style.scss',
+        mobileStyle: 'src/css/mobile.scss',
         img: 'src/images/**/*.*'
     },
     watch: {
@@ -72,6 +74,15 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('mobileStyle:build', function () {
+    return gulp.src(path.src.mobileStyle)
+        .pipe(sass())
+        .pipe(cssmin())
+        .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
+        .pipe(gulp.dest(path.build.css))
+        .pipe(reload({stream: true}));
+});
+
 
 gulp.task('cleanCSSBuild', () => {
     return gulp.src(path.build.css)
@@ -102,6 +113,7 @@ gulp.task('build',
     gulp.series('html:build',
         'pug',
         'style:build',
+        'mobileStyle:build',
         'cleanCSSBuild',
         'js:build',
         'image:build'));
@@ -131,4 +143,4 @@ gulp.task('webserver', function () {
     browserSync(config);
 });
 
-gulp.task('default', gulp.series('build', 'pug', 'html:build', 'style:build', 'webserver', 'watch', 'js:build', 'image:build'));
+gulp.task('default', gulp.series('build', 'pug', 'html:build', 'style:build', 'mobileStyle:build', 'webserver', 'watch', 'js:build', 'image:build'));

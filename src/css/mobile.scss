@@ -1,23 +1,28 @@
-
-@media all and (max-width: 1300px){
-  .center-wrap{
-    max-width: 980px;
-  }
-}
-
 @media all and (max-width: 1000px){
 
-  .flex__container .flex__container_row{
+  .flex__container.flex__container_row{
     flex-direction: column;
     width: 100%;
   }
 
-  .center-wrap{
+  .center-wrap {
     width: auto;
   }
 
-  .menu__item {
-    margin: 0 15px;
+  .content,
+  .left-menu,
+  .header__menu,
+  .header__logo {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .form-groups-container{
+    display: flex;
+    flex-direction: row;
+    .form-groups{
+      padding: 0 20px 0 0;
+    }
   }
 
   h1{
