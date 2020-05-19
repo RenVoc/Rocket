@@ -118,13 +118,13 @@ gulp.task('watch', function(){
 
     watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');
-    });
+    }, browserSync.reload);
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
-    });
+    }, browserSync.reload);
     watch([path.watch.img], function(event, cb) {
         gulp.start('images:build');
-    });
+    }, browserSync.reload);
 });
 
 gulp.task('webserver', function () {

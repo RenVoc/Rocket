@@ -1,0 +1,21 @@
+@import "../../css/partials/helpers.scss";
+
+.cards__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.cards__item{
+  width: calc(100% / 3 - 20px);
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: $box-shadow;
+}
+
+.cards__description{
+  padding: 10px;
+}

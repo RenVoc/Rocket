@@ -8,9 +8,11 @@ html(lang="ru")
             header.header
                 .center-wrap
                     include template/Header/header.pug
-            section.flex__container.flex__container_row
-                aside.menu
-                    include template/Menu/menu.pug
-                article.content
-                    include template/Content/Cards.pug
+            section.center-wrap
+                .flex__container.flex__container_row
+                    aside.left-menu
+                        h1 Наши номера
+                        include template/LeftMenu/left-menu.pug
+                    article.content
+                        include template/Content/Cards.pug
             footer.main-footer

@@ -4,7 +4,7 @@
 @import "partials/standart";
 @import "../template/Content/cards-style";
 @import "../template/Header/header-style";
-@import "../template/Menu/menu-style";
+@import "../template/LeftMenu/menu-style";
 
 html, body {
   height: 100%;
@@ -15,7 +15,7 @@ html, body {
   font: 14px/22px 'Lato', sans-serif;
   font-weight: 500;
   color: $main-font-color;
-  background: $white-color;
+  background: #fff;
   overflow: auto;
 }
 
@@ -81,14 +81,22 @@ section{
   justify-content: center;
 }
 
+.left-menu{
+  max-width: 25%;
+}
+
+.content{
+  max-width: 70%;
+  width: 100%;
+}
+
 .btn{
-  color: $error-color;
+  color: $white-color;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   padding: 12px 30px;
-  background: $white-color;
-  box-shadow:$box-shadow;
+  background: $orange;
   margin: 8px 0;
   position: relative;
   border:none;
@@ -96,16 +104,7 @@ section{
   transition: all 0.2s ease-in;
   &:hover{
     text-decoration: none;
-    box-shadow: $box-shadow-hover;
     transition: all 0.2s ease-out;
-  }
-  &.btn__ics{
-    padding: 10px 30px 10px 22px;
-    color:$main-font-color;
-    border:1px solid $light-gray;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 }
 

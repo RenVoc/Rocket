@@ -1,26 +1,29 @@
 @import "helpers.scss";
 
 h1{
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.16px;
-  line-height: 48px;
+  line-height: 42px;
   margin: 20px 0;
+  color: $h-color;
 }
 
 h2{
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.16px;
   line-height: 40px;
+  color: $h-color;
 }
 
 h3{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.08px;
-  line-height: 32px;
+  line-height: 28px;
   margin: 0;
+  color: $h-color;
 }
 
 h4{
@@ -28,14 +31,16 @@ h4{
   font-weight: 600;
   line-height: 24px;
   margin: 0;
+  color: $h-color;
 }
 
 p{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  font-family: 'Lora', serif;
+  font-family: 'Lato', serif;
   margin: 12px 0;
+  color: $h-color;
 }
 
 ul,ol{
@@ -61,7 +66,7 @@ ul,ol{
 }
 
 .style__gray{
-  color: $gray-color;
+  color: #9a9eb8;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
 }
@@ -85,7 +90,7 @@ input,select {
 }
 
 input:focus, select:focus{
-  border-color:$gray-color;
+  border-color:#9a9eb8;
   outline: none;
   transition: all .2s ease-in;
 }
