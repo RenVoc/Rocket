@@ -1,0 +1,36 @@
+
+@media all and (max-width: 1300px){
+  .center-wrap{
+    max-width: 980px;
+  }
+}
+
+@media all and (max-width: 1000px){
+
+  .flex__container .flex__container_row{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .center-wrap{
+    width: auto;
+  }
+
+  .menu__item {
+    margin: 0 15px;
+  }
+
+  h1{
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h2{
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  h1,h2,h3{
+    text-align: center;}
+
+}

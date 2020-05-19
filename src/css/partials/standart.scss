@@ -1,0 +1,126 @@
+@import "helpers.scss";
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  line-height: 48px;
+  margin: 20px 0;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  line-height: 40px;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.08px;
+  line-height: 32px;
+  margin: 0;
+}
+
+h4{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Lora', serif;
+  margin: 12px 0;
+}
+
+ul,ol{
+  padding: 0;
+  margin: 20px 0;
+  li{
+    padding: 0 0 0 40px;
+    margin: 10px 0;
+    list-style-type: none;
+    position: relative;
+    &:before{
+      content:'';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: $error-color;
+      border-radius: 50%;
+      top: 50%;
+      margin-top: -2px;
+      left: 20px;
+    }
+  }
+}
+
+.style__gray{
+  color: $gray-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.center{
+  text-align: center;
+}
+
+input{
+  width: calc(100% - 32px);
+}
+
+input,select {
+  border: 1px solid $light-gray;
+  padding: 16px 15px 6px;
+  color: $main-font-color;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: all .2s ease-in;
+}
+
+input:focus, select:focus{
+  border-color:$gray-color;
+  outline: none;
+  transition: all .2s ease-in;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 99% center;
+  padding: 15px;
+  width:100%;
+}
+
+a{
+  color: $main-font-color;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  outline: none;
+}
+
+a,button{
+  outline: none;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+mark{
+  background: $mark;
+}
+
+img{
+  max-width: 100%
+}

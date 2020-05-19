@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+    head
+        title="Rocket Оловянников"
+        include template/links.pug
+    body
+        .root-wrapper
+            header.header
+                .center-wrap
+                    include template/Header/header.pug
+            section.flex__container.flex__container_row
+                aside.menu
+                    include template/Menu/menu.pug
+                article.content
+                    include template/Content/Cards.pug
+            footer.main-footer
